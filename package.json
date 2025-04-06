@@ -4,6 +4,7 @@
   "main": "server.js",
   "dependencies": {
     "append-field": "^1.0.0",
+    "body-parser": "^2.2.0",
     "buffer-from": "^1.1.2",
     "busboy": "^1.6.0",
     "concat-stream": "^1.6.2",
