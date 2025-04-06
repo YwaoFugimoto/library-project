@@ -28,7 +28,7 @@ const upload = multer({
     }
     if (req.query.publishedAfter != null && req.query.publishedAfter !=
         '') {
-       query = query.lte('publishDate', req.query.publishedAfter)
+       query = query.gte('publishDate', req.query.publishedAfter)
    }
     try{
         const books = await query.exec()  
