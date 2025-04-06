@@ -38,3 +38,17 @@
     <label>Description</label>
     <textarea name="description"><%= book.description %></textarea>
 </div>
+
+<script>
+
+    FilePond.registerPlugin(FilePondPluginImagePreview);
+
+    FilePond.registerPlugin(FilePondPluginImageResize);
+
+    FilePond.registerPlugin(FilePondPluginFileEncode);
+
+    const inputElement = document.querySelector('input[type="file"]');
+
+    const pond = FilePond.create(inputElement);
+
+</script>
