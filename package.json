@@ -15,6 +15,7 @@
     "inherits": "^2.0.4",
     "isarray": "^1.0.0",
     "media-typer": "^0.3.0",
+    "method-override": "^3.0.0",
     "mime-db": "^1.52.0",
     "mime-types": "^2.1.35",
     "minimist": "^1.2.8",
