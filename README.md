@@ -1,20 +1,19 @@
-# Biblioteca Virtual
+# Virtual Library
 
-Uma aplicação web para gerenciamento de bibliotecas virtuais, onde você pode cadastrar e gerenciar autores, livros.
+A web application for managing a virtual library where you can add and manage authors, books.
 
-## Funcionalidades
+## Features
 
-- **Gerenciamento de Autores:** Cadastro e atualização de informações dos autores.
-- **Cadastro de Livros:** Cadastro e edição de livros, com associação ao autor.
-- **Upload de Capa:** Inclusão de capa de livro com preview e redimensionamento utilizando FilePond.
-- **Interface Dinâmica:** Páginas renderizadas utilizando EJS.
-- **Validação de Dados:** Validação tanto no frontend quanto no backend para garantir a integridade dos dados.
+- **Author Management:** Create, update, and manage author details.
+- **Book Registration:** Add and edit books, with each book associated with an author.
+- **Cover Upload:** Upload book covers with preview and resizing functionality powered by FilePond.
+- **Dynamic Interface:** Pages rendered using EJS for a flexible and dynamic user experience.
+- **Data Validation:** Both frontend and backend validations to ensure data integrity.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-- **Node.js:** Ambiente de execução para JavaScript.
-- **Express:** Framework web para criação do servidor e gerenciamento das rotas.
-- **MongoDB:** Banco de dados NoSQL para armazenamento dos dados.
-- **EJS:** Template engine para renderização de páginas HTML dinâmicas.
-- **FilePond:** Biblioteca para upload de arquivos com funcionalidades de preview e redimensionamento.
-
+- **Node.js:** JavaScript runtime environment.
+- **Express:** Web framework for handling server routes.
+- **MongoDB:** NoSQL database for flexible data storage.
+- **EJS:** Template engine for dynamic HTML rendering.
+- **FilePond:** File upload library supporting image preview and resizing.
