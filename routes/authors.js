@@ -37,7 +37,7 @@ router.post('/', async (req, res) => {
     }catch (error) {
         res.render('authors/new',{
             author: author,
-            errorMessage:'Error Creating Author...'
+            errorMessage:'Error creating author...'
         })
     }
 
@@ -80,12 +80,13 @@ router.put('/:id', async (req, res ) => {
         }else{
             res.render('authors/edit',{
                 author: author,
-                errorMessage:'Error updating Author...'
+                errorMessage:'Error updating author...'
         })
     }
     }
 })
 
+// delete author route
 router.delete('/:id', async (req, res) => {
     let author 
     try{
@@ -96,7 +97,12 @@ router.delete('/:id', async (req, res) => {
         if (author == null){
             res.redirect('/')
         }else{
-            res.redirect(`/authors/${author.id}`)
+            const books = await Book.find({ author: author.id }).limit(6).exec()
+            res.render(`authors/show`, {
+                author: author,
+                booksByAuthor: books,
+                errorMessage: 'Author still have books'
+            })
         }
     }
 })
